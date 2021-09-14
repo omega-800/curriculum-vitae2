@@ -1,0 +1,31 @@
+
+.navbar{
+    flex-grow:1;
+    flex-shrink:1;
+    margin:1%;
+}
+.navbar_top{
+    display:flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.navbar_top_link{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color:var(--darkest);
+    background-color: var(--lighter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor:pointer;
+}
+.navbar_top:hover .navbar_top_link:hover{
+    background-color: var(--mid);
+    width:24%;
+}
+.navbar_top:hover .navbar_top_link{
+    width:19%;
+}

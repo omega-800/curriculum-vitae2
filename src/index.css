@@ -1,0 +1,115 @@
+:root{
+  --lightest: 	#fff7f2;
+  --lighter: 	#f7ad83;
+  --mid:	#f36a2c;
+  --darker: #4c4c4c;
+  --darkest:#262626;
+}
+*{
+  transition: .12s cubic-bezier(.3, 0, 1, 1);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkest);
+  color: var(--darkest);
+  flex-wrap: wrap;
+}
+button, a{
+  background-color:var(--lighter);
+  color:var(--darkest);
+  border:none;
+  padding: 5px;
+  margin:5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+table{
+  border-collapse: collapse;
+}
+th,td{
+  padding:.5em;
+}
+button:hover, a:hover{
+  color:var(--lightest);
+  background-color: var(--darker);
+}
+.section {
+  display:flex;
+  align-items: space-around;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.section_title{
+  text-align: center;
+  width:100%;
+  color:var(--lighter);
+  border-bottom: var(--darker) solid;
+  margin:1rem;
+}
+.section_title h2{
+  margin: 1em;
+}
+.section_title:hover{
+  color:var(--lightest);
+  border-bottom: var(--mid) solid;
+}
+.box{
+  background-color: var(--darker);
+  color: var(--lightest);
+  flex-grow:1;
+  flex-shrink:1;
+  flex-basis: 44%;
+  margin: 1%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align: justify;
+}
+.box:hover .box_title, .imgbox:hover .box_title{
+  background-color: var(--mid);
+  color: var(--lightest);
+}
+.box:hover .box_content{
+  background-color: var(--lightest);
+  color: var(--darkest);
+}
+.box:hover{
+  transform: scale(1.01);
+}
+.box:hover button, .box:hover a{
+  background-color: var(--mid);
+  color: var(--lightest);
+}
+.box:hover button:hover, .box:hover a:hover{
+  background-color: var(--darker);
+  color: var(--lightest);
+}
+.box_title{
+  width: 90%;
+  background-color: var(--lighter);
+  padding:5%;
+  display: flex;
+  justify-content: center;
+  color:var(--darkest);
+}
+.box_title *{
+  margin:0;
+}
+.box table, button, a{
+  width:100%;
+}
+.box_content{
+  width:90%;
+  padding:5%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  flex-grow: 2;
+}
