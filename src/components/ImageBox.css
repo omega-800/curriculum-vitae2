@@ -1,7 +1,6 @@
 .imgbox{
   background-color: var(--darker);
   color: var(--lightest);
-  border:3px solid var(--lighter);
   display:flex;
   width:80%;
   flex-direction:column;
