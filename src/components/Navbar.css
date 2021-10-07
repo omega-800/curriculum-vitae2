@@ -23,7 +23,7 @@
     cursor:pointer;
 }
 .navbar_top:hover .navbar_top_link:hover{
-    background-color: var(--mid);
+    background-color: var(--darker);
     width:24%;
 }
 .navbar_top:hover .navbar_top_link{

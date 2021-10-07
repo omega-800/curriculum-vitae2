@@ -8,12 +8,6 @@
   text-align:center;
   margin: .5em;
 }
-.imgbox:hover{
-  transform: scale(1.01);
-}
-.imgbox:hover .imgbox_content{
-  background-color: var(--lightest);
-}
 .imgbox_content{
   width:90%;
   padding:5%;

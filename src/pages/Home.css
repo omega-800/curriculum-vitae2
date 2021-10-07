@@ -6,13 +6,6 @@
     background-color: var(--lighter);
     color: var(--darkest);
 }
-.box:hover .skills div{
-    background-color: var(--mid);
-    color: var(--lightest);
-}
-.box:hover .skills{
-    background-color: var(--lightest);
-}
 .html div{width:90%;}
 .css div{width:90%;}
 .js div{width:60%;}

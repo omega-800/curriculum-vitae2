@@ -34,14 +34,6 @@ img{
   flex-direction: column;
 }
 
-.imgbox:hover .carousel_content{
-  background-color: var(--lightest);
-}
-.imgbox:hover .carousel__arrow{
-  background-color: var(--lightest);
-  color:var(--darker);
-}
-
 .carousel__arrow {
   font-weight: 800;
   font-size:2em;
@@ -63,14 +55,10 @@ img{
   width: 0.1rem;
   height: 0.1rem;
   border-radius:50%;
-  background-color: var(--darkest);
   cursor: pointer;
-  opacity: .2;
+  opacity: .5;
 }
 
-.carousel__arrow:hover{
-  color:var(--darkest);
-}
 .carousel__indicator:hover {
     opacity: .75;
   }

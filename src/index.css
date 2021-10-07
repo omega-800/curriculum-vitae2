@@ -1,9 +1,9 @@
 :root{
-  --lightest: 	#fff7f2;
-  --lighter: 	#f7ad83;
-  --mid:	#f36a2c;
-  --darker: #4c4c4c;
-  --darkest:#262626;
+  --lightest: 	#262626;
+  --lighter: 	#7868e6;
+  --mid:	#e4fbff;
+  --darker: #b8b5ff;
+  --darkest:#edeef7;
 }
 *{
   transition: .12s cubic-bezier(.3, 0, 1, 1);
@@ -37,7 +37,7 @@ th,td{
 }
 button:hover, a:hover{
   color:var(--lightest);
-  background-color: var(--darker);
+  background-color: var(--darkest);
 }
 .section {
   display:flex;
@@ -55,10 +55,6 @@ button:hover, a:hover{
 .section_title h2{
   margin: 1em;
 }
-.section_title:hover{
-  color:var(--lightest);
-  border-bottom: var(--mid) solid;
-}
 .box{
   background-color: var(--darker);
   color: var(--lightest);
@@ -70,25 +66,6 @@ button:hover, a:hover{
   flex-direction:column;
   align-items:center;
   text-align: justify;
-}
-.box:hover .box_title, .imgbox:hover .box_title{
-  background-color: var(--mid);
-  color: var(--lightest);
-}
-.box:hover .box_content{
-  background-color: var(--lightest);
-  color: var(--darkest);
-}
-.box:hover{
-  transform: scale(1.01);
-}
-.box:hover button, .box:hover a{
-  background-color: var(--mid);
-  color: var(--lightest);
-}
-.box:hover button:hover, .box:hover a:hover{
-  background-color: var(--darker);
-  color: var(--lightest);
 }
 .box_title{
   width: 90%;
