@@ -129,18 +129,7 @@ class Carousel extends Component {
                 </div>
                 <div className="carousel_content">
 
-                    <ul className="carousel__slides">
-                    {this.props.slides.map((slide, index) =>
-                        <CarouselSlide
-                        key={index}
-                        index={index}
-                        activeIndex={this.state.activeIndex}
-                        slide={slide.src}
-                        />
-                    )}
-                    </ul>
-
-                    <ul className="carousel__indicators">
+                <ul className="carousel__indicators">
                         <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
                     {this.props.slides.map((slide, index) =>
                         <CarouselIndicator
@@ -152,6 +141,18 @@ class Carousel extends Component {
                     )}
                     <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
                     </ul>
+                    
+                    <ul className="carousel__slides">
+                    {this.props.slides.map((slide, index) =>
+                        <CarouselSlide
+                        key={index}
+                        index={index}
+                        activeIndex={this.state.activeIndex}
+                        slide={slide.src}
+                        />
+                    )}
+                    </ul>
+
                 </div>
             </div>
         );
