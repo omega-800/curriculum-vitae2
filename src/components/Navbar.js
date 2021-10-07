@@ -12,9 +12,6 @@ function Navbar(){
                 <Link to="/career" className="navbar_top_link">
                     <h4>Karriere</h4>
                 </Link>
-                <Link to="/certificates" className="navbar_top_link">
-                    <h4>Zertifikate</h4>
-                </Link>
                 <Link to="/projects" className="navbar_top_link">
                     <h4>Projekte</h4>
                 </Link>

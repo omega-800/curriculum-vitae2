@@ -1,6 +1,7 @@
 .imgbox{
   background-color: var(--darker);
   color: var(--lightest);
+  border:3px solid var(--lighter);
   display:flex;
   width:80%;
   flex-direction:column;
@@ -22,4 +23,9 @@
 .imgbox_content img{
   object-fit:contain;
   width:100%;
+}
+@media (max-width:660px) {
+  .imgbox{
+    width:98%;
+  }
 }

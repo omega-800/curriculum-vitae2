@@ -65,3 +65,18 @@ img{
   .carousel__indicator--active{
       opacity: 1;
   }
+
+  @media (max-width: 660px){
+    .carousel__arrow{
+      font-weight: 600;
+      font-size:1.5em;
+      padding:0;
+      margin: 0 0.5em;
+    }
+    .carousel__indicator{
+      width: 0.3em;
+      height: 0.3em;
+      opacity: .2;
+      margin: 0.1em;
+    }
+  }

@@ -20,83 +20,49 @@ function Home(){
 						<h4>Infos</h4>
 					</div>
 					<div className="box_content">
-						<h4>Personalien</h4>
-						<table>			
-							<tr>			
-								<td><b>Geburtsdatum</b></td>			
-								<td>18.06.2002</td>			
-							</tr>	
-							<tr>			
-								<td><b>Nationalität</b></td>			
-								<td>Schweiz, Russland, U.S.A.</td>			
-							</tr>
-							<tr>
-								<td><b>Wohnort</b></td>			
-								<td>Stettbachstr. 129g</td>			
-							</tr>			
-							<tr>			
-								<td><b>PLZ/Ort</b></td>			
-								<td>8051 Zürich</td>			
-							</tr>				
+						<table>	
+							<thead>
+								<tr>
+									<th colSpan="2"><h4>Personalien</h4></th>
+								</tr>
+							</thead>
+							<tbody>		
+								<tr>			
+									<td><b>Geburtsdatum</b></td>			
+									<td>18.06.2002</td>			
+								</tr>	
+								<tr>			
+									<td><b>Nationalität</b></td>			
+									<td>Schweiz, Russland, U.S.A.</td>			
+								</tr>
+								<tr>
+									<td><b>Wohnort</b></td>			
+									<td>Stettbachstr. 129g</td>			
+								</tr>			
+								<tr>			
+									<td><b>PLZ/Ort</b></td>			
+									<td>8051 Zürich</td>			
+								</tr>
+							</tbody>				
 						</table>	
-						<h4>Kontakt</h4>	
-						<table>			
-							<tr>			
-								<td><b>Telefon</b></td>					
-								<td>076 271 93 38</td>						
-							</tr>
-							<tr>
-								<td><b>Email</b></td>		
-								<td>gshevoroshkin@gmail.com</td>					
-							</tr>				
+						<table>	
+							<thead>
+								<tr>
+									<th colSpan="2"><h4>Kontakt</h4></th>
+								</tr>
+							</thead>
+							<tbody>		
+								<tr>			
+									<td><b>Telefon</b></td>					
+									<td>076 271 93 38</td>						
+								</tr>
+								<tr>
+									<td><b>Email</b></td>		
+									<td>gshevoroshkin@gmail.com</td>					
+								</tr>	
+							</tbody>			
 						</table>
 					</div>	
-				</div>
-			</div>
-
-			<div className="home_school section">
-				<div className="section_title"><h2>Besuchte Schulen</h2></div>
-				<div className="box">
-					<div className="box_title">
-						<h4>Informatikmittelschule</h4>
-					</div>
-						<div className="box_content">
-						<p><b>Hottingen</b></p>
-						<p>2017 - 2020</p>
-						<Link to='/certificates'>Zeugnisse</Link>
-					</div>
-				</div>
-				
-				<div className="box">
-					<div className="box_title">
-						<h4>Sekundarschule</h4>
-					</div>
-					<div className="box_content">
-						<p><b>Herzogenmühle</b></p>
-						<p>2016 - 2017</p>
-						<Link to='/certificates'>Zeugnisse</Link>
-					</div>
-				</div>
-
-				<div className="box">
-					<div className="box_title">
-						<h4>Gymnasium</h4>
-					</div>
-					<div className="box_content">
-						<p><b>Hohe Promenade</b></p>
-						<p>2014 - 2016</p>
-						<Link to='/certificates'>Zeugnisse</Link>
-					</div>
-				</div>
-				
-				<div className="box">
-					<div className="box_title">
-						<h4>Primarschule</h4>
-					</div>
-					<div className="box_content">
-						<p><b>Probstei</b></p>
-						<p>2008 - 2014</p>
-					</div>
 				</div>
 			</div>
 
@@ -232,23 +198,25 @@ function Home(){
 						<h4>Vater</h4>
 					</div>
 					<div className="box_content">
-						<table>		
-							<tr>			
-							<td><b>Name</b></td>			
-							<td>Alexey Shevoroshkin</td>			
-							</tr>		
-							<tr>			
-							<td><b>Geburtsdatum</b></td>			
-							<td>08.05.1966</td>			
-							</tr>
-							<tr>			
-							<td><b>Beruf</b></td>			
-							<td>Entwicklungsleiter UBS</td>			
-							</tr>						
-							<tr>			
-							<td><b>Nationalität</b></td>			
-							<td>Schweiz, U.S.A.</td>			
-							</tr>				
+						<table>	
+							<tbody>	
+								<tr>			
+								<td><b>Name</b></td>			
+								<td>Alexey Shevoroshkin</td>			
+								</tr>		
+								<tr>			
+								<td><b>Geburtsdatum</b></td>			
+								<td>08.05.1966</td>			
+								</tr>
+								<tr>			
+								<td><b>Beruf</b></td>			
+								<td>Entwicklungsleiter UBS</td>			
+								</tr>						
+								<tr>			
+								<td><b>Nationalität</b></td>			
+								<td>Schweiz, U.S.A.</td>			
+								</tr>	
+							</tbody>			
 						</table>
 					</div>
 				</div>
@@ -259,22 +227,24 @@ function Home(){
 					</div>
 					<div className="box_content">
 						<table>	
-							<tr>			
-							<td><b>Name</b></td>			
-							<td>Tatiana Chirokikh</td>			
-							</tr>					
-							<tr>			
-							<td><b>Geburtsdatum</b></td>			
-							<td>14.04.1967</td>			
-							</tr>
-							<tr>			
-							<td><b>Beruf</b></td>			
-							<td>Ernährungsberaterin</td>			
-							</tr>						
-							<tr>			
-							<td><b>Nationalität</b></td>			
-							<td>Schweiz, Russland</td>			
-							</tr>				
+							<tbody>
+								<tr>			
+								<td><b>Name</b></td>			
+								<td>Tatiana Chirokikh</td>			
+								</tr>					
+								<tr>			
+								<td><b>Geburtsdatum</b></td>			
+								<td>14.04.1967</td>			
+								</tr>
+								<tr>			
+								<td><b>Beruf</b></td>			
+								<td>Ernährungsberaterin</td>			
+								</tr>						
+								<tr>			
+								<td><b>Nationalität</b></td>			
+								<td>Schweiz, Russland</td>			
+								</tr>
+							</tbody>				
 						</table>
 					</div>
 				</div>
@@ -284,19 +254,21 @@ function Home(){
 						<h4>Bruder</h4>
 					</div>
 					<div className="box_content">
-						<table>		
-							<tr>			
-							<td><b>Name</b></td>			
-							<td>Michail Shevoroshkin</td>			
-							</tr>		
-							<tr>			
-							<td><b>Geburtsdatum</b></td>			
-							<td>22.11.2004</td>			
-							</tr>
-							<tr>			
-							<td><b>Beruf</b></td>			
-							<td>Schüler, Sekundar</td>			
-							</tr>			
+						<table>	
+							<tbody>	
+								<tr>			
+								<td><b>Name</b></td>			
+								<td>Michail Shevoroshkin</td>			
+								</tr>		
+								<tr>			
+								<td><b>Geburtsdatum</b></td>			
+								<td>22.11.2004</td>			
+								</tr>
+								<tr>			
+								<td><b>Beruf</b></td>			
+								<td>Schüler, Sekundar</td>			
+								</tr>	
+							</tbody>		
 						</table>
 					</div>
 				</div>	
@@ -306,19 +278,21 @@ function Home(){
 						<h4>Bruder</h4>
 					</div>
 					<div className="box_content">
-						<table>		
-							<tr>			
-							<td><b>Name</b></td>			
-							<td>Nikolay Shevoroshkin</td>			
-							</tr>		
-							<tr>			
-							<td><b>Geburtsdatum</b></td>			
-							<td>05.08.2006</td>			
-							</tr>
-							<tr>			
-							<td><b>Beruf</b></td>			
-							<td>Schüler, Gymnasium</td>			
-							</tr>			
+						<table>
+							<tbody>			
+								<tr>			
+								<td><b>Name</b></td>			
+								<td>Nikolay Shevoroshkin</td>			
+								</tr>		
+								<tr>			
+								<td><b>Geburtsdatum</b></td>			
+								<td>05.08.2006</td>			
+								</tr>
+								<tr>			
+								<td><b>Beruf</b></td>			
+								<td>Schüler, Gymnasium</td>			
+								</tr>
+							</tbody>			
 						</table>
 					</div>
 				</div>	
@@ -363,6 +337,49 @@ function Home(){
 					</div>
 				</div>
 				
+			</div>
+
+			<div className="home_school section">
+				<div className="section_title"><h2>Besuchte Schulen</h2></div>
+				<div className="box">
+					<div className="box_title">
+						<h4>Informatikmittelschule</h4>
+					</div>
+						<div className="box_content">
+						<p><b>Hottingen</b></p>
+						<p>2017 - 2020</p>
+					</div>
+				</div>
+				
+				<div className="box">
+					<div className="box_title">
+						<h4>Sekundarschule</h4>
+					</div>
+					<div className="box_content">
+						<p><b>Herzogenmühle</b></p>
+						<p>2016 - 2017</p>
+					</div>
+				</div>
+
+				<div className="box">
+					<div className="box_title">
+						<h4>Gymnasium</h4>
+					</div>
+					<div className="box_content">
+						<p><b>Hohe Promenade</b></p>
+						<p>2014 - 2016</p>
+					</div>
+				</div>
+				
+				<div className="box">
+					<div className="box_title">
+						<h4>Primarschule</h4>
+					</div>
+					<div className="box_content">
+						<p><b>Probstei</b></p>
+						<p>2008 - 2014</p>
+					</div>
+				</div>
 			</div>
         </div>
     )

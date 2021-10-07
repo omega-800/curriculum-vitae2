@@ -5,7 +5,7 @@
   --darker: #b8b5ff;
   --darkest:#edeef7;
 }
-*{
+body *{
   transition: .12s cubic-bezier(.3, 0, 1, 1);
 }
 body {
@@ -17,24 +17,31 @@ body {
   background-color: var(--darkest);
   color: var(--darkest);
   flex-wrap: wrap;
+  margin:0;
 }
 button, a{
   background-color:var(--lighter);
   color:var(--darkest);
   border:none;
-  padding: 5px;
-  margin:5px;
+  width:100%;
+  padding: 0.5rem 0;
   cursor: pointer;
   font-size: 1em;
   text-decoration: none;
   text-align: center;
 }
 table{
-  border-collapse: collapse;
+  border-spacing: .1em;
+  width:100%;
+  table-layout: fixed;
 }
-th,td{
-  padding:.5em;
+td,a{
+  overflow:clip;
+  white-space:wrap;
+  text-overflow:ellipsis;
 }
+tr{padding:1em;}
+thead{text-align:center;}
 button:hover, a:hover{
   color:var(--lightest);
   background-color: var(--darkest);
@@ -44,33 +51,31 @@ button:hover, a:hover{
   align-items: space-around;
   justify-content: space-around;
   flex-wrap:wrap;
+  margin:1rem;
 }
 .section_title{
   text-align: center;
   width:100%;
   color:var(--lighter);
-  border-bottom: var(--darker) solid;
   margin:1rem;
-}
-.section_title h2{
-  margin: 1em;
 }
 .box{
   background-color: var(--darker);
   color: var(--lightest);
+  display:flex;
   flex-grow:1;
   flex-shrink:1;
   flex-basis: 44%;
   margin: 1%;
-  display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:stretch;
   text-align: justify;
+  border:3px solid var(--lighter);
 }
 .box_title{
-  width: 90%;
+  width: 96%;
   background-color: var(--lighter);
-  padding:5%;
+  padding:2%;
   display: flex;
   justify-content: center;
   color:var(--darkest);
@@ -89,4 +94,22 @@ button:hover, a:hover{
   align-items:center;
   flex-direction: column;
   flex-grow: 2;
+}
+
+@media (max-width: 660px){
+  h2{font-size: 1em;}
+  h3{font-size:0.9em;}
+  h4{font-size:0.8em;}
+  td,p{font-size:0.7em;}
+  button,a{
+    padding:.5rem 0;
+    font-size:0.7em;
+  }
+  tr{padding:0.5em;}
+  .section_title{margin:0;}
+  .section_title h2{margin:0.5em;}
+  .box{
+    flex-basis:98%;
+    margin:1%;
+  }
 }

@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Career from './pages/Career';
-import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
 import Art from './pages/Art';
 
@@ -28,13 +27,6 @@ function App() {
               text="Währenddessen ich diese Aufträge erledigte oder bei den Firmen arbeitete, sammelte ich in verschiedensten Bereichen Wissen"
               />
             <Career />
-          </Route>
-          <Route path="/certificates">
-            <Header
-              title="Zertifikate und Zeugnisse"
-              text="Hier sind meine Zeugnisse und Zertifikate ersichtlich"
-              />
-            <Certificates />
           </Route>
           <Route path="/projects">
             <Header
